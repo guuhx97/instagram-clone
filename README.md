@@ -8,18 +8,6 @@
 
 > This project was developed to practice the JavaScript programming language and other technologies such as NodeJs, ReactJs and React Native. The system was developed according to the video on the RocketSeat channel.
 
-## Usage
-
-```sh
-yarn run start
-```
-
-## Run tests
-
-```sh
-yarn run test
-```
-
 ## Author
 
 👤 **Gustavo Souza**
