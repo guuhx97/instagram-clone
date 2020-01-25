@@ -1,23 +1,22 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation'
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
+import Feed from './pages/Feed';
 
 import logo from './assets/instagram.png';
 
-import Feed from './pages/Feed'
-
-const Routes = createAppContainer(
+export default createAppContainer(
   createStackNavigator({
-    Feed
-  },{
+    Feed,
+  }, {
     headerLayoutPreset: 'center',
     defaultNavigationOptions: {
       headerTitle: <Image source={logo} />,
-      headerStyle:{
+      headerStyle: {
         backgroundColor: '#f5f5f5'
-      }
-    }
-  })
-)
-
-export default Routes;
+      },
+    },
+  }),
+);

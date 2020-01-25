@@ -1,53 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { Animated } from 'react-native'
+import React, { useEffect, useState } from 'react';
+import { Animated } from 'react-native';
+import { Small, Original } from './styles';
 
-import { Small, Original } from './style'
-
-const OriginalAnimated = Animated.createAnimatedComponent(Original)
+const AnimatedOriginal = Animated.createAnimatedComponent(Original);
 
 export default function LazyImage({
   smallSource,
   source,
-  aspectRatio,
-  shouldLoad,
+  shouldLoad = false,
+  aspectRatio = 1,
 }) {
-
   const opacity = new Animated.Value(0);
-  const [loaded, setLoaded] = useState(false)
+
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    if(shouldLoad){
+    if (shouldLoad) {
       setTimeout(() => {
-        setLoaded(true)
-      }, 1000)
+        setLoaded(true);
+      }, 1000);
     }
-  }, [shouldLoad]);
+  }, [shouldLoad])
 
-  function handleAnimate(){
+  function handleAnimate() {
     Animated.timing(opacity, {
-      toValue: 1,
       duration: 500,
-      useNativeDriver: true
+      toValue: 1,
+      useNativeDriver: true, 
     }).start();
   }
 
   return (
     <Small 
-      source={smallSource} 
-      ratio={aspectRatio} 
+      source={smallSource}
+      aspect={aspectRatio}
       resizeMode="contain"
-      blurRadius={2}
-    >{
-      loaded && 
-      <OriginalAnimated
-        style={{ opacity }}
-        source={source}
-        ratio={aspectRatio}
-        resizeMode="contain"
-        onLoadEnd={handleAnimate}
-      />
-    }
-
+      blurRadius={3}
+    >
+      { loaded && (
+        <AnimatedOriginal 
+          style={{ opacity }}
+          onLoadEnd={handleAnimate}
+          source={source} 
+          aspect={aspectRatio} 
+          resizeMode="contain"
+        />
+      ) }
     </Small>
   );
 }

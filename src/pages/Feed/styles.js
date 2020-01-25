@@ -1,7 +1,11 @@
 import styled from 'styled-components/native';
 
+export const Container = styled.View`
+  
+`;
+
 export const Post = styled.View`
-  margin-top: 10px;  
+  margin-top: 10px;
 `;
 
 export const Header = styled.View`
@@ -11,21 +15,16 @@ export const Header = styled.View`
 `;
 
 export const Avatar = styled.Image`
-  width: 35px;
+  width: 32px;
   height: 32px;
   border-radius: 16px;
   margin-right: 10px;
 `;
 
 export const Name = styled.Text`
-  color: #333;
-  font-weight: bold/
+  font-weight: 600;
 `;
 
-export const PostImage = styled.Image`
-  width: 100%;
-  aspect-ratio: ${props => props.ration};
-`;
 export const Description = styled.Text`
   padding: 15px;
   line-height: 18px;
