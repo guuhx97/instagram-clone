@@ -1,43 +1,50 @@
 
 <h1 align="center">
-    <img alt="DevRadar" title="#instagram-clone" src=".github/instagram.png" width="250px" />
+    <img alt="Instagram Clone" src=".github/logo.png" />
 </h1>
 
 <h4 align="center">
-  🚀 Youtube Video by RocketSeat
+  🚀 Vídeo Youtube by RocketSeat
 </h4>
 
 <p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/guuhx97/instagram-clone">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 <p align="center">
-  <a href="#rocket-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">License</a>
+  <img alt="Be The Hero" src=".github/instagram-screens.png" width="100%">
 </p>
 
-<p align="center">
-  <img alt="Frontend" src=".github/instagram-screens.png" width="100%" >
-</p>
+## 👨🏼‍💻 Projeto
 
-## 🚀 Technologies
+O Instagram clone é um projeto feito para estudo e treinamento de `React Native`. Foi feito uma copia do feed do Instagram com `scroll` infinito.
 
-For the development of the project, the following techniques were used:
+## 🔨 Tecnologias
 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
 
-## 🤔 Getting Started
+## 🔄 Executar
+ - Fazer clone do repositório.
 
-- Clone this repository;
-- Install project dependencies with `yarn install`;
-- Run the Json Server to simulate the application backend `yarn json-server server.json -d 1000 -w`;
-- Run the application with the command `yarn start`;
+### 🔧 Back-end & 📱 Mobile
+ - Executar `yarn install` para instalar dependências do projeto;
+ - Executar `yarn json-server server.json -d 1000 -w`;
+ - Executar `yarn start` para executar o projeto
 
+## ♻️ Como contribuir
+- Faça um fork desse repositório;
+- Crie uma branch com a sua feature: `git checkout -b minha-feature`
+- Commit suas mudanças: `git commit -m ':emoji: feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
 
 ## 📝 Licença
+Este projeto está sobre a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-This project is under the MIT license. See the [LICENSE](LICENSE) for more details.
+---
 
+<h4 align="center">
+  Feito com ❤️ by Gustavo Souza
+</h4>
